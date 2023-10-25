@@ -52,7 +52,7 @@ public class Miniprojeto {
 
 
         String capitulo4 = 
-        "Lucas continuou a viver em Vilar. Ele se tornou um professor e passou a ensinar as crianças da aldeia sobre o mundo. " +
+        "\nLucas continuou a viver em Vilar. Ele se tornou um professor e passou a ensinar as crianças da aldeia sobre o mundo. " +
         "Lucas era um professor dedicado. Ele sempre se esforçava para ensinar os alunos o máximo que podia. " +
         "Ele gostava de compartilhar seu conhecimento e paixão pelo aprendizado com os outros. " +
         "As crianças de Vilar adoravam Lucas. Ele era um homem sábio e gentil, e sempre estava disposto a ajudar. " +
@@ -68,7 +68,7 @@ public class Miniprojeto {
 
 
         String capitulo5 = 
-        "Lucas continuou a viver em Vilar. " +
+        "\nLucas continuou a viver em Vilar. " +
         "Ele decidiu ficar na aldeia para treinar suas habilidades e se tornar um guerreiro poderoso. " +
         "Lucas passava seus dias treinando com espada, arco e flecha, e combate corpo a corpo. " + 
         "Ele também treinava sua mente, estudando história, estratégia e filosofia." +
@@ -126,7 +126,7 @@ public class Miniprojeto {
             }
 
             else if (escolhaCapitulo3.equalsIgnoreCase("2")) {
-                
+
                 System.out.println(capitulo5);
             }
         }
