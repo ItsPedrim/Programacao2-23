@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Miniprojeto {
 
@@ -21,8 +23,6 @@ public class Miniprojeto {
             "Assim, decidiu levar a pedra para casa para mostrar aos seus pais . ",
 
             null,
-            null, 
-            null,
 
             personagem1,
             personagem2,
@@ -43,9 +43,10 @@ public class Miniprojeto {
         "No momento, o " + personagem2.nome + " estava decidindo se viajaria para o Norte ou para o Sul da terra de Astra." +
         "Ele ofereceu a " + personagem1.nome + " a chance de viajar com ele.",
 
-            "\n 1) Permanecer em Vilar",
-            "\n 2) Agradecer " + personagem2.nome + " e se juntar a ele em sua jornando viajando para o Sul.", 
-            "\n 3) Agradecer " + personagem2.nome + " e se juntar a ele em sua jornada viajando para o Norte.",
+            new ArrayList<String>(Arrays.asList(
+            "\n1) Permanecer em Vilar",
+            "\n2) Agradecer " + personagem2.nome + " e se juntar a ele em sua jornando viajando para o Sul.",
+            "\n3) Agradecer " + personagem2.nome + " e se juntar a ele em sua jornada viajando para o Norte.")), 
 
             personagem1,
             personagem2,
@@ -63,9 +64,9 @@ public class Miniprojeto {
         "" + personagem1.nome + " continuou a viver em Vilar, mas nunca esqueceu daquele momento com o " + personagem2.nome + ". " + 
         "Ele sempre sonhou em um dia poder viajar pelo mundo e viver novas aventuras.",
 
-            "\n 1) Se tornar um professor da aldeia e ir à floresta.",
-            "\n 2) Passar os dias treinando suas habilidades", 
-            null,
+            new ArrayList<String>(Arrays.asList(
+            "\n1) Se tornar um professor da aldeia e ir à floresta.",
+            "\n2) Passar os dias treinando suas habilidades")), 
 
             personagem1,
             personagem2,
@@ -93,8 +94,6 @@ public class Miniprojeto {
 
 
             null,
-            null, 
-            null,
 
             personagem1,
             null,
@@ -114,12 +113,14 @@ public class Miniprojeto {
         "Eles distribuíram comida e água, e ajudaram a construir hospitais. " +
         "" + personagem1.nome + " ficou profundamente afetado pela praga. Ele viu muitas pessoas morrerem, e isso o fez questionar o sentido da vida. " +
         "" + personagem1.nome + " decidiu deixar o " + personagem2.nome + " e viajar pelo mundo sozinho. " +
-        "Ele queria encontrar um propósito para sua vida e ajudar as pessoas que precisavam.",
+        "Ele queria encontrar um propósito para sua vida e ajudar as pessoas que precisavam." +
+        "Depois de dois dias, enquanto caminhava para outras terras, " + personagem1.nome + " começou a sentir dores e seu corpo " +
+        " apresentou cansaço. Não havia dúvidas, ele havia sido contaminado pela praga. ",
 
 
-            null,
-            null, 
-            null,
+            new ArrayList<String>(Arrays.asList(
+            "\n1) Procurar cura na Floresta Luminosa.",
+            "\n2) Procurar cura com o líder dos Ladrões.")),
 
             personagem1,
             null,
@@ -135,12 +136,10 @@ public class Miniprojeto {
         "Um dia, " + personagem1.nome + " e o " + personagem2.nome + " chegaram a um castelo cercado por um exército inimigo. " +
         "O " + personagem2.nome + " disse a " + personagem1.nome + " que eles precisavam ajudar o rei do castelo a defender o seu reino. " +
         "" + personagem1.nome + " e o " + personagem2.nome + " lutaram contra o exército inimigo. Eles foram corajosos e derrotaram os inimigos. " +
-        "O rei do castelo agradeceu a " + personagem1.nome + " e ao " + personagem2.nome + " por sua ajuda. Ele deu a " + personagem1.nome + " uma recompensa e o nomeou " + personagem2.nome + ". " +
-        "" + personagem1.nome + " ficou feliz por ter ajudado o rei. Ele percebeu que tinha um grande potencial como " + personagem2.nome + ".",
+        "O rei do castelo agradeceu a " + personagem1.nome + " e ao " + personagem2.nome + " por sua ajuda. Ele deu a " + personagem1.nome + " uma recompensa e o nomeou " + "Cavaleiro Honorário" + ". " +
+        "" + personagem1.nome + " ficou feliz por ter ajudado o rei. Ele percebeu que tinha um grande potencial como " + "Cavaleiro Honorário do reino" + ".",
 
 
-            null,
-            null, 
             null,
 
             personagem1,
@@ -167,14 +166,76 @@ public class Miniprojeto {
 
 
             null,
-            null, 
-            null,
 
             personagem1,
             null,
 
             30);
 
+        // Escolha 1 - (Capitulo 6)
+
+        Capitulo capitulo8 = new Capitulo(
+            "Capitulo 8",
+
+            "\n" + personagem1.nome + " estava desesperado. Ele havia sido contaminado pela praga e sabia que não tinha muito tempo." +
+            "Ele tinha ouvido falar de uma floresta mágica chamada Floresta Luminosa, onde se dizia que havia uma cura para " +
+            "muitas doenças. " + personagem1.nome + " começou a sua jornada para a Floresta Luminosa." +
+            "A viagem foi longa e difícil, mas ele estava determinado a encontrar uma cura. " +
+            "Finalmente, depois de muitos dias, ele chegou à floresta. " + personagem1.nome + " entrou na floresta e logo " +
+            "se viu em um mundo encantado. A floresta estava cheia de árvores e plantas com flores brilhantes. " +
+            "O ar estava cheio de música e o canto dos pássaros." + personagem1.nome + " continuou a sua jornada pela " + 
+            "floresta, procurando por alguém que pudesse ajudá-lo. Finalmente, ele encontrou um velho sábio que " +
+            "morava em uma cabana na floresta. " + personagem1.nome + " contou ao velho sábio sobre sua doença e pediu ajuda. " +
+            "O velho sábio ouviu atentamente e depois disse: \n-- Eu posso ajudá-lo, mas você terá que passar por uma prova. " + 
+            "\nQual prova? , perguntou " + personagem1.nome +
+            "\n-- Você terá que passar três dias e três noites na floresta sozinho, disse o velho sábio." +
+            "\n--Se você sobreviver, eu lhe darei a cura." +
+            "\n" + personagem1.nome + "estava hesitante, mas ele sabia que não tinha outra escolha. Ele concordou com a prova. " +
+            personagem1.nome + " deixou a cabana do velho sábio e entrou na floresta novamente. " +
+            "Ele passou os próximos três dias e três noites sozinho na floresta. Ele enfrentou muitos perigos, mas ele sobreviveu. " +
+            "No terceiro dia, " + personagem1.nome + " voltou à cabana do velho sábio. O velho sábio cumprimentou-o e disse: " +
+            "\n--Você passou na prova. Aqui está a cura." +
+            "\nO velho sábio deu a " + personagem1.nome + " uma pequena garrafa cheia de um líquido verde brilhante." +
+            personagem1.nome + " tomou o líquido e imediatamente sentiu-se melhor. " +
+            "\n--Obrigado, disse " + personagem1.nome + ". -- Você me salvou. " +
+            "\n--Você fez por merecer, disse o velho sábio. -- Agora vá e ajude as pessoas que precisam." +
+            "\n" + personagem1.nome + " deixou a Floresta Luminosa e voltou à vila. " +
+            "Ele usou a cura para ajudar muitas pessoas que estavam doentes. Ele encontrou seu propósito na vida. ",
+
+            null,
+            
+            personagem1,
+            null,
+            
+            100);
+            
+        // Escolha 2 - (Capitulo 6)
+
+        Capitulo capitulo9 = new Capitulo(
+            "Capitulo 9",
+            
+            personagem1.nome + " estava desesperado. Ele havia sido contaminado pela praga e sabia que não tinha muito tempo. " + 
+            "Ele tinha ouvido falar de um líder dos ladrões que tinha uma cura para todas as doenças. " +
+            personagem1.nome + "começou a sua jornada para encontrar o líder dos ladrões. A viagem foi longa e perigosa, " + 
+            "mas ele estava determinado a encontrar uma cura. Finalmente, depois de muitos dias, ele chegou à cidade onde " +
+            "o líder dos ladrões vivia. " + personagem1.nome + " entrou na cidade e começou a procurar pelo líder dos ladrões. " +
+            "Ele perguntou a todos que encontrou, mas ninguém parecia saber onde ele morava. Finalmente, " + personagem1.nome +
+            " encontrou um homem que sabia onde o líder dos ladrões morava. O homem disse a " + personagem1.nome + 
+            " que ele teria que passar por um teste para provar que era digno de receber a cura. " + personagem1.nome + 
+            "aceitou o desafio. Ele passou por um teste difícil, mas ele conseguiu. Finalmente, " + personagem1.nome + 
+            "foi levado ao líder dos ladrões. O líder dos ladrões deu a " + personagem1.nome + "uma pequena garrafa cheia de " +
+            "um líquido vermelho. " + "\n-- Esta é a cura, disse o líder dos ladrões." + " -- Tome-a e você será curado." +
+            "\n" + personagem1.nome + " tomou o líquido e imediatamente sentiu-se melhor. Ele agradeceu ao líder dos ladrões " +
+            "e saiu da cidade. " + personagem1.nome + "voltou ao mundo real e usou a cura para ajudar muitas pessoas " +
+            "que estavam doentes. Ele encontrou seu propósito na vida e passou o resto de seus dias ajudando os outros.",
+
+            null, 
+
+            personagem1, 
+            null, 
+            
+            100);
+       
         // Implementação dos Capítulos
         
         capitulo1.mostrar();
@@ -188,7 +249,7 @@ public class Miniprojeto {
         int escolhaCapitulo2 = capitulo2.escolher();
         
         // Capítulo 2 - Escolha 1
-        if (escolhaCapitulo2 == 1) {
+        if (escolhaCapitulo2 == 0) {
 
             capitulo3.mostrar();
 
@@ -199,7 +260,7 @@ public class Miniprojeto {
             int escolhaCapitulo3 = capitulo3.escolher();
 
             // Capitulo 3 - Escolha 1
-            if (escolhaCapitulo3 == 1) {
+            if (escolhaCapitulo3 == 0) {
 
                 capitulo4.mostrar();
 
@@ -208,7 +269,7 @@ public class Miniprojeto {
             }
 
             // Capitulo 3 - Escolha 2
-            else if (escolhaCapitulo3 == 2) {
+            else if (escolhaCapitulo3 == 1) {
 
                 capitulo5.mostrar();
 
@@ -218,15 +279,29 @@ public class Miniprojeto {
         }
 
         // Capítulo 2 - Escolha 2
-        else if (escolhaCapitulo2 == 2) {
+        else if (escolhaCapitulo2 == 1) {
 
             capitulo6.mostrar();
             System.out.println("\n\nDevido os efeitos da praga, " + personagem1.nome +
             " agora tem " + (personagem1.energia + capitulo6.alteracaoEnergia) + " pontos de vida.\n");
+
+            int escolhaCapitulo6 = capitulo6.escolher();
+
+            // Capitulo 6 - Escolha 1
+            if (escolhaCapitulo6 == 0) {
+
+                capitulo8.mostrar();
+            }
+
+            // Capitulo 6 - Escolha 2
+            else if (escolhaCapitulo6 == 1) {
+
+                capitulo9.mostrar();
+            }
         }
 
         // Capítulo 2 - Escolha 3
-        else if (escolhaCapitulo2 == 3) {
+        else if (escolhaCapitulo2 == 2) {
 
             capitulo7.mostrar();
             System.out.println("\n\nDevida a batalha " + personagem1.nome +

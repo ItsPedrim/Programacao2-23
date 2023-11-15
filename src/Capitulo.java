@@ -1,12 +1,11 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Capitulo {
     
     String nome;
     String texto;
-    String escolha1;
-    String escolha2;
-    String escolha3;
+    ArrayList<String> escolhas;
     Personagem personagem;
     Personagem personagem2;
     int alteracaoEnergia;
@@ -17,9 +16,7 @@ Capitulo(
 
     String nome,
     String texto,
-    String escolha1,
-    String escolha2,
-    String escolha3,
+    ArrayList<String> escolhas,
     Personagem personagem1,
     Personagem personagem2,
     int alteracaoEnergia
@@ -28,9 +25,7 @@ Capitulo(
     { 
     this.nome = nome;
     this.texto = texto;
-    this.escolha1 = escolha1;
-    this.escolha2 = escolha2;
-    this.escolha3 = escolha3;
+    this.escolhas = escolhas;
     this.personagem = personagem1;  
     this.personagem2 = personagem2;
     this.alteracaoEnergia = alteracaoEnergia;
@@ -44,19 +39,14 @@ void mostrar() {
         "\n\nNome: " + nome +
         "\nTexto: " + texto);
 
-    if (escolha1 != null) {
-    
-    System.out.println(
-        "\n\nEscolha 1: " + escolha1 +
-        "\nEscolha 2: " + escolha2
-        );
-    }
+        if (escolhas != null) {
 
-    if (escolha3 != null) {
-        
-        System.out.println("\nEscolha 3: " + escolha3);
+            for (int i = 0; i < escolhas.size(); i++) {
+                
+                System.out.println("\n" + escolhas.get(i));
+            }
+        }
 
-    }
 }
 
 int escolher() {
@@ -65,7 +55,7 @@ int escolher() {
 
         int escolhaUsuario = escaneador.nextInt();
 
-        return escolhaUsuario;
+        return escolhaUsuario - 1;
     }
     
     else {
