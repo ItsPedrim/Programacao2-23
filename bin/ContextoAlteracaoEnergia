@@ -1,0 +1,19 @@
+// System.out.println("\n\nDevida a batalha, " + personagem1.nome + " agora tem " +
+        // (personagem1.energia + raiz.alteracaoEnergia) + " pontos de vida.\n");
+        
+   
+        //     System.out.println("\n\n" + personagem1.nome +
+        //     " comeu a deliciosa comida que sua mãe preparou e agora tem " + (personagem1.energia + capitulo2.alteracaoEnergia) +
+        //     " pontos de vida.\n");
+
+        //         System.out.println("\n\n" + personagem1.nome + "aprendeu magia de cura e agora tem " +
+        //         (personagem1.energia + capitulo3.alteracaoEnergia) + " pontos de vida.\n");
+
+        //         System.out.println("\n\n" + personagem1.nome + " aprendeu magia de cura e agora tem " +
+        //         (personagem1.energia + capitulo4.alteracaoEnergia) + " pontos de vida.\n");
+        
+        //     System.out.println("\n\nDevido os efeitos da praga, " + personagem1.nome +
+        //     " agora tem " + (personagem1.energia + capitulo5.alteracaoEnergia) + " pontos de vida.\n");
+
+        //     System.out.println("\n\nDevida a batalha " + personagem1.nome +
+        //     " agora tem " + (personagem1.energia + capitulo6.alteracaoEnergia) + " pontos de vida.\n");

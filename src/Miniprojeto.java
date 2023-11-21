@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Miniprojeto {
 
@@ -12,51 +11,36 @@ public class Miniprojeto {
 
         // Criação dos Capítulos:
 
-        Capitulo capitulo1 = new Capitulo(
-            "Capitulo 1",
+        Capitulo raiz = new Capitulo(
+         "Capitulo 1",
 
             "No ano de 1200, na pequena aldeia de Vilar, situada na terra de Astra, vivia um jovem chamado" + personagem1.nome + "." +
             personagem1.nome + " era um rapaz curioso e aventureiro, sempre pronto para explorar o mundo ao seu redor. " + 
             "Certo dia, " + personagem1.nome + " estava caminhando pela floresta quando viu um estranho objeto brilhante no chão. " +
             "Então, se aproximou do objeto e percebeu que era uma pedra preciosa. " +
             personagem1.nome + " ficou maravilhado com a pedra. Ele nunca tinha visto nada igual antes. " +
-            "Assim, decidiu levar a pedra para casa para mostrar aos seus pais . ",
-
-            null,
+            "Assim, decidiu levar a pedra para casa para mostrar aos seus pais . " +
+            "No caminho para casa, " + personagem1.nome + "se deparou com um grupo de bandidos. " +
+            "Os bandidos atacaram e tentaram roubar a pedra preciosa. " +
+            personagem1.nome + " lutou contra os bandidos, mas eles eram mais fortes que ele. " +
+            personagem1.nome + " estava prestes a ser derrotado quando um " + personagem2.nome + 
+            " apareceu e salvou o dia. " + "O " + personagem2.nome + " era um homem forte e poderoso. " +
+            "Ele derrotou os bandidos e ajudou " + personagem1.nome + " a se levantar. " +
+            "Ele agradeceu ao " + personagem2.nome + " por sua ajuda." +
+            "O " + personagem1.nome + " disse que era um " + personagem2.nome + " errante e que estava viajando pelo mundo em busca de aventuras. " +
+            "No momento, o " + personagem2.nome + " estava decidindo se viajaria para o Norte ou para o Sul da terra de Astra." +
+            "Ele ofereceu a " + personagem1.nome + " a chance de viajar com ele.",
 
             personagem1,
             personagem2,
 
-            0);
+            -50
+            );
+        
+        // Escolha 1 - (Capitulo 1)
 
         Capitulo capitulo2 = new Capitulo(
-         "Capitulo 2",
-
-        "No caminho para casa, " + personagem1.nome + "se deparou com um grupo de bandidos. " +
-        "Os bandidos atacaram e tentaram roubar a pedra preciosa. " +
-        personagem1.nome + " lutou contra os bandidos, mas eles eram mais fortes que ele. " +
-        personagem1.nome + " estava prestes a ser derrotado quando um " + personagem2.nome + 
-        " apareceu e salvou o dia. " + "O " + personagem2.nome + " era um homem forte e poderoso. " +
-        "Ele derrotou os bandidos e ajudou " + personagem1.nome + " a se levantar. " +
-        "Ele agradeceu ao " + personagem2.nome + " por sua ajuda." +
-        "O " + personagem1.nome + " disse que era um " + personagem2.nome + " errante e que estava viajando pelo mundo em busca de aventuras. " +
-        "No momento, o " + personagem2.nome + " estava decidindo se viajaria para o Norte ou para o Sul da terra de Astra." +
-        "Ele ofereceu a " + personagem1.nome + " a chance de viajar com ele.",
-
-            new ArrayList<String>(Arrays.asList(
-            "\n1) Permanecer em Vilar",
-            "\n2) Agradecer " + personagem2.nome + " e se juntar a ele em sua jornando viajando para o Sul.",
-            "\n3) Agradecer " + personagem2.nome + " e se juntar a ele em sua jornada viajando para o Norte.")), 
-
-            personagem1,
-            personagem2,
-
-            -50);
-        
-        // Escolha 1 - (Capitulo 2)
-
-        Capitulo capitulo3 = new Capitulo(
-            "Capitulo 3",
+            "Capitulo 2",
 
         "\n" + personagem1.nome + " decidiu ficar em Vilar. Ele contou aos seus pais sobre a pedra preciosa e sobre o " + personagem2.nome + ". " +
         "Os pais de " + personagem1.nome + " ficaram orgulhosos de seu filho. " +
@@ -64,19 +48,16 @@ public class Miniprojeto {
         "" + personagem1.nome + " continuou a viver em Vilar, mas nunca esqueceu daquele momento com o " + personagem2.nome + ". " + 
         "Ele sempre sonhou em um dia poder viajar pelo mundo e viver novas aventuras.",
 
-            new ArrayList<String>(Arrays.asList(
-            "\n1) Se tornar um professor da aldeia e ir à floresta.",
-            "\n2) Passar os dias treinando suas habilidades")), 
-
             personagem1,
             personagem2,
 
-            20);
+            20
+            );
         
-        // Escolha 1 - (Capitulo 3)
+        // Escolha 1 - (Capitulo 2)
 
-        Capitulo capitulo4 = new Capitulo(
-            "Capitulo 4",
+        Capitulo capitulo3 = new Capitulo(
+            "Capitulo 3",
 
         "\n" + personagem1.nome + " continuou a viver em Vilar. Ele se tornou um professor e passou a ensinar as crianças da aldeia sobre o mundo. " +
         "" + personagem1.nome + " era um professor dedicado. Ele sempre se esforçava para ensinar os alunos o máximo que podia. " +
@@ -93,17 +74,16 @@ public class Miniprojeto {
         "Ele era conhecido por sua bondade e compaixão, e ele era uma inspiração para todos que o conheciam. ",
 
 
-            null,
-
             personagem1,
             null,
 
-            40);
+            40
+            );
 
-        // Escolha 2 - (Capitulo 2)
+        // Escolha 2 - (Capitulo 1)
 
-        Capitulo capitulo6 = new Capitulo(
-            "Capitulo 6",
+        Capitulo capitulo5 = new Capitulo(
+            "Capitulo 5",
 
         "\n" + personagem1.nome + " aceitou a oferta e partiu com o " + personagem2.nome + " para uma nova aventura. " +
         "" + personagem1.nome + " e o " + personagem2.nome + " viajaram por muitos lugares. Eles conheceram pessoas de todos os tipos e viveram muitas aventuras. " +
@@ -117,20 +97,16 @@ public class Miniprojeto {
         "Depois de dois dias, enquanto caminhava para outras terras, " + personagem1.nome + " começou a sentir dores e seu corpo " +
         " apresentou cansaço. Não havia dúvidas, ele havia sido contaminado pela praga. ",
 
-
-            new ArrayList<String>(Arrays.asList(
-            "\n1) Procurar cura na Floresta Luminosa.",
-            "\n2) Procurar cura com o líder dos Ladrões.")),
-
             personagem1,
             null,
 
-            -30);
+            -30
+            );
 
-        // Escolha 3 - (Capitulo 2)
+        // Escolha 3 - (Capitulo 1)
 
-        Capitulo capitulo7 = new Capitulo(
-            "Capitulo 7",
+        Capitulo capitulo6 = new Capitulo(
+            "Capitulo 6",
 
         "\n" + personagem1.nome + " e o " + personagem2.nome + " viajaram por muitos lugares. Eles conheceram pessoas de todos os tipos e viveram muitas aventuras. " +
         "Um dia, " + personagem1.nome + " e o " + personagem2.nome + " chegaram a um castelo cercado por um exército inimigo. " +
@@ -140,17 +116,16 @@ public class Miniprojeto {
         "" + personagem1.nome + " ficou feliz por ter ajudado o rei. Ele percebeu que tinha um grande potencial como " + "Cavaleiro Honorário do reino" + ".",
 
 
-            null,
-
             personagem1,
             null,
 
-            -20);
+            -20
+            );
 
-        // Escolha 2 - (Capitulo 3)
+        // Escolha 2 - (Capitulo 2)
 
-        Capitulo capitulo5 = new Capitulo(
-            "Capitulo 5",
+        Capitulo capitulo4 = new Capitulo(
+            "Capitulo 4",
 
         "\n" + personagem1.nome + " continuou a viver em Vilar. " +
         "Ele decidiu ficar na aldeia para treinar suas habilidades e se tornar um guerreiro poderoso. " +
@@ -165,17 +140,16 @@ public class Miniprojeto {
         "" + personagem1.nome + " salvou Vilar dos bandidos. Ele foi considerado um herói pela aldeia. ",
 
 
-            null,
-
             personagem1,
             null,
 
-            30);
+            30
+            );
 
-        // Escolha 1 - (Capitulo 6)
+        // Escolha 1 - (Capitulo 5)
 
-        Capitulo capitulo8 = new Capitulo(
-            "Capitulo 8",
+        Capitulo capitulo7 = new Capitulo(
+            "Capitulo 7",
 
             "\n" + personagem1.nome + " estava desesperado. Ele havia sido contaminado pela praga e sabia que não tinha muito tempo." +
             "Ele tinha ouvido falar de uma floresta mágica chamada Floresta Luminosa, onde se dizia que havia uma cura para " +
@@ -202,17 +176,16 @@ public class Miniprojeto {
             "\n" + personagem1.nome + " deixou a Floresta Luminosa e voltou à vila. " +
             "Ele usou a cura para ajudar muitas pessoas que estavam doentes. Ele encontrou seu propósito na vida. ",
 
-            null,
-            
             personagem1,
             null,
-            
-            100);
-            
-        // Escolha 2 - (Capitulo 6)
 
-        Capitulo capitulo9 = new Capitulo(
-            "Capitulo 9",
+            100
+            );
+            
+        // Escolha 2 - (Capitulo 5)
+
+        Capitulo capitulo8 = new Capitulo(
+            "Capitulo 8",
             
             personagem1.nome + " estava desesperado. Ele havia sido contaminado pela praga e sabia que não tinha muito tempo. " + 
             "Ele tinha ouvido falar de um líder dos ladrões que tinha uma cura para todas as doenças. " +
@@ -229,85 +202,36 @@ public class Miniprojeto {
             "e saiu da cidade. " + personagem1.nome + "voltou ao mundo real e usou a cura para ajudar muitas pessoas " +
             "que estavam doentes. Ele encontrou seu propósito na vida e passou o resto de seus dias ajudando os outros.",
 
-            null, 
-
             personagem1, 
             null, 
-            
-            100);
+
+            100
+            );
        
-        // Implementação dos Capítulos
+        // Adicionando as Escolhas aos Capítulos ----------------------------------------
+
+        // Capítulo 1 --------------------------
+        raiz.escolhas.add(new Escolha("\n1) Permanecer em Vilar", capitulo2));
         
-        capitulo1.mostrar();
+        raiz.escolhas.add(new Escolha("\n2) Agradecer " + personagem2.nome +
+        " e se juntar a ele em sua jornando viajando para o Sul.", capitulo5));
+
+        raiz.escolhas.add(new Escolha("\n3 Agradecer" + personagem2.nome + 
+        " e se juntar a ele em sua jornada viajando para o Norte.", capitulo6));
+
+        // Capítulo 2 --------------------------
+        capitulo2.escolhas.add(new Escolha("\n1) Se tornar um professor da aldeia e ir à floresta.", capitulo3));
+        capitulo2.escolhas.add(new Escolha("\n2) Passar os dias treinando suas habilidades", capitulo4));
+
+        // Capítulo 5 --------------------------
+        capitulo5.escolhas.add(new Escolha("\n1) Procurar cura na Floresta Luminosa.", capitulo7));
+        capitulo5.escolhas.add(new Escolha("\n2) Procurar cura com o líder dos Ladrões.", capitulo8));
+
+        // Implementação dos Capítulos ---------------------------------------------------
         
-        capitulo2.mostrar();
+        raiz.executar();
 
-        System.out.println("\n\nDevida a batalha, " + personagem1.nome + " agora tem " +
-        (personagem1.energia + capitulo2.alteracaoEnergia) + " pontos de vida.\n");
         
-        // Entrada da escolha do Capítulo 2
-        int escolhaCapitulo2 = capitulo2.escolher();
-        
-        // Capítulo 2 - Escolha 1
-        if (escolhaCapitulo2 == 0) {
-
-            capitulo3.mostrar();
-
-            System.out.println("\n\n" + personagem1.nome +
-            " comeu a deliciosa comida que sua mãe preparou e agora tem " + (personagem1.energia + capitulo3.alteracaoEnergia) +
-            " pontos de vida.\n");
-
-            int escolhaCapitulo3 = capitulo3.escolher();
-
-            // Capitulo 3 - Escolha 1
-            if (escolhaCapitulo3 == 0) {
-
-                capitulo4.mostrar();
-
-                System.out.println("\n\n" + personagem1.nome + "aprendeu magia de cura e agora tem " +
-                (personagem1.energia + capitulo4.alteracaoEnergia) + " pontos de vida.\n");
-            }
-
-            // Capitulo 3 - Escolha 2
-            else if (escolhaCapitulo3 == 1) {
-
-                capitulo5.mostrar();
-
-                System.out.println("\n\n" + personagem1.nome + " aprendeu magia de cura e agora tem " +
-                (personagem1.energia + capitulo4.alteracaoEnergia) + " pontos de vida.\n");
-            }
-        }
-
-        // Capítulo 2 - Escolha 2
-        else if (escolhaCapitulo2 == 1) {
-
-            capitulo6.mostrar();
-            System.out.println("\n\nDevido os efeitos da praga, " + personagem1.nome +
-            " agora tem " + (personagem1.energia + capitulo6.alteracaoEnergia) + " pontos de vida.\n");
-
-            int escolhaCapitulo6 = capitulo6.escolher();
-
-            // Capitulo 6 - Escolha 1
-            if (escolhaCapitulo6 == 0) {
-
-                capitulo8.mostrar();
-            }
-
-            // Capitulo 6 - Escolha 2
-            else if (escolhaCapitulo6 == 1) {
-
-                capitulo9.mostrar();
-            }
-        }
-
-        // Capítulo 2 - Escolha 3
-        else if (escolhaCapitulo2 == 2) {
-
-            capitulo7.mostrar();
-            System.out.println("\n\nDevida a batalha " + personagem1.nome +
-            " agora tem " + (personagem1.energia + capitulo7.alteracaoEnergia) + " pontos de vida.\n");
-        }
-
     }
 }
 

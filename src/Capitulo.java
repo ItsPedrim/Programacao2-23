@@ -5,7 +5,7 @@ public class Capitulo {
     
     String nome;
     String texto;
-    ArrayList<String> escolhas;
+    ArrayList<Escolha> escolhas = new ArrayList<Escolha>();
     Personagem personagem;
     Personagem personagem2;
     int alteracaoEnergia;
@@ -16,7 +16,6 @@ Capitulo(
 
     String nome,
     String texto,
-    ArrayList<String> escolhas,
     Personagem personagem1,
     Personagem personagem2,
     int alteracaoEnergia
@@ -25,7 +24,6 @@ Capitulo(
     { 
     this.nome = nome;
     this.texto = texto;
-    this.escolhas = escolhas;
     this.personagem = personagem1;  
     this.personagem2 = personagem2;
     this.alteracaoEnergia = alteracaoEnergia;
@@ -43,7 +41,7 @@ void mostrar() {
 
             for (int i = 0; i < escolhas.size(); i++) {
                 
-                System.out.println("\n" + escolhas.get(i));
+                System.out.println("\n" + escolhas.get(i).texto);
             }
         }
 
@@ -63,4 +61,16 @@ int escolher() {
         return 0;
     }
 }
+
+void executar() {
+
+    mostrar();
+    
+    if (escolhas.size() != 0) {
+
+        int indice = escolher();
+        escolhas.get(indice).proximo.executar();
+    }
+
+    }
 }
