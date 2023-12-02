@@ -3,74 +3,95 @@ import java.util.ArrayList;
 
 public class Capitulo {
     
-    String nome;
-    String texto;
-    ArrayList<Escolha> escolhas = new ArrayList<Escolha>();
-    Personagem personagem;
-    Personagem personagem2;
-    int alteracaoEnergia;
-    Scanner escaneador;
+    private String nome;
+    private String texto;
+    private ArrayList<Escolha> escolhas = new ArrayList<Escolha>();
+    private Personagem personagem1;
+    private Personagem personagem2;
+    private int alteracaoEnergia;
+    private Scanner escaneador;
 
 
-Capitulo(
+    public Capitulo(
 
-    String nome,
-    String texto,
-    Personagem personagem1,
-    Personagem personagem2,
-    int alteracaoEnergia
-    ) 
+        String nome,
+        String texto,
+        Personagem personagem1,
+        Personagem personagem2,
+        int alteracaoEnergia
+        ) 
 
-    { 
-    this.nome = nome;
-    this.texto = texto;
-    this.personagem = personagem1;  
-    this.personagem2 = personagem2;
-    this.alteracaoEnergia = alteracaoEnergia;
-    this.escaneador = new Scanner(System.in);
-}   
+        { 
+        this.nome = nome;
+        this.texto = texto;
+        this.personagem1 = personagem1;  
+        this.personagem2 = personagem2;
+        this.alteracaoEnergia = alteracaoEnergia;
+        this.escaneador = new Scanner(System.in);
+    }   
 
-void mostrar() {
+    // Altera a energia do personagem e imprime no console o valor atual da vida do personagem
+    private void energiaPersonagem() {
 
-    System.out.println(
+        this.personagem1.setEnergia(alteracaoEnergia);
+        System.out.println("\n\nA energia do personagem é: " + this.personagem1.getEnergia());
+    }
 
-        "\n\nNome: " + nome +
-        "\nTexto: " + texto);
+    // Imprime o nome, o texto e as escolhas do Capítulo
+    private void mostrar() {
 
-        if (escolhas != null) {
+        System.out.println(
 
-            for (int i = 0; i < escolhas.size(); i++) {
-                
-                System.out.println("\n" + escolhas.get(i).texto);
+            "\n\nNome: " + this.nome +
+            "\nTexto: " + this.texto);
+
+            if (escolhas != null) {
+
+                for (int i = 0; i < this.escolhas.size(); i++) {
+                    
+                    System.out.println("\n" + this.escolhas.get(i).getTexto());
+                }
             }
+
+    }
+
+    // Recebe a entrada do usuário para uma das escolhas, retornando o índice de um elemento do ArrayList<Escolha>
+    private int escolher() {
+
+        if (escaneador.hasNextInt()) {
+
+            int escolhaUsuario = escaneador.nextInt();
+
+            return escolhaUsuario - 1;
+        }
+        
+        else {
+            
+            return 0;
+        }
+    }
+
+    // Faz a chamada dos métodos, energiaPersonagem(), mostrar(), escolher() e o próprio executar()
+    public void executar() {
+
+        mostrar();
+        
+        if (this.escolhas.size() != 0) {
+
+            int indice = escolher();
+            energiaPersonagem();
+            this.escolhas.get(indice).getProximo().executar();
+        }
+        else {
+
+            energiaPersonagem();
         }
 
-}
+        }
 
-int escolher() {
+    // Retorna o ArrayList<Escolha>
+    public ArrayList<Escolha> getEscolhas() {
 
-    if (escaneador.hasNextInt()) {
-
-        int escolhaUsuario = escaneador.nextInt();
-
-        return escolhaUsuario - 1;
-    }
-    
-    else {
-        
-        return 0;
-    }
-}
-
-void executar() {
-
-    mostrar();
-    
-    if (escolhas.size() != 0) {
-
-        int indice = escolher();
-        escolhas.get(indice).proximo.executar();
-    }
-
+        return this.escolhas;
     }
 }
